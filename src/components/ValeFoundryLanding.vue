@@ -285,10 +285,6 @@ onUnmounted(() => {
         <div class="about-content">
           <div class="about-image">
             <img src="https://images.unsplash.com/photo-1720036237467-f902c13bc5a7?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Siderúrgica Vale Foundry">
-            <div class="about-image__badge">
-              <span>Siderurgia</span>
-              <span>Integrada</span>
-            </div>
           </div>
           <div class="about-text">
         <div class="section-header">
@@ -1180,31 +1176,6 @@ button {
   display: block;
 }
 
-.about-image__badge {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  background-color: var(--color-accent-orange);
-  padding: 20px 30px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  box-shadow: 0 10px 30px rgba(255, 87, 34, 0.4);
-}
-
-.about-image__badge span:first-child {
-  font-size: 1.2rem;
-}
-
-.about-image__badge span:last-child {
-  font-size: 0.9rem;
-  opacity: 0.9;
-}
-
 .about-text {
   padding: 20px 0;
 }
@@ -1895,9 +1866,23 @@ button {
   }
 }
 
+@media (max-width: 1024px) {
+  .hero {
+    background-attachment: scroll !important;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
 @media (max-width: 768px) {
   .desktop-only { 
     display: none !important; 
+  }
+  
+  .hero {
+    background-attachment: scroll !important;
+    background-size: cover;
+    background-position: center center;
   }
   
   .hero__title {
