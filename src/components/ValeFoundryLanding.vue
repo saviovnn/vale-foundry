@@ -923,7 +923,7 @@ button {
   font-size: 4.5rem;
   font-weight: 900;
   line-height: 1.05;
-  margin-bottom: 25px;
+  margin-bottom: 65px;
   text-transform: uppercase;
   letter-spacing: -0.02em;
   text-shadow: 2px 4px 20px rgba(0, 0, 0, 0.5);
@@ -933,7 +933,6 @@ button {
   background: linear-gradient(135deg, #fff, var(--color-accent-orange), var(--color-accent-blue));
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
   animation: gradient-shift 5s ease infinite;
   background-size: 200% 200%;
 }
